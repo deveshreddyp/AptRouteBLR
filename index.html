@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Traffic Optimizer</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <header>
+        <h1 class="gradient-text">Bangalore FlowFast 🚦</h1>
+    </header>
+
+    <main>
+        <div class="controls">
+            <label for="start-point">Start Point</label>
+            <select id="start-point">
+                <option value="">Select Start...</option>
+                <option value="Koramangala">Koramangala</option>
+                <option value="Silk Board">Silk Board</option>
+                <option value="Marath_W">Marathahalli (West)</option>
+                <option value="Marath_E">Marathahalli (East)</option>
+                <option value="Hebbal">Hebbal</option>
+                <option value="Elec_City">Electronic City</option>
+                <option value="Yeshwantpur">Yeshwantpur</option>
+                <option value="Majestic">Majestic</option>
+                <option value="Indiranagar">Indiranagar</option>
+                <option value="Whitefield">Whitefield</option>
+                <option value="Jayanagar">Jayanagar</option>
+            </select>
+            
+            <label for="end-point">End Point</label>
+            <select id="end-point">
+                <option value="">Select End...</option>
+                <option value="Whitefield">Whitefield</option>
+                <option value="Hebbal">Hebbal</option>
+                <option value="Koramangala">Koramangala</option>
+                <option value="Silk Board">Silk Board</option>
+                <option value="Marath_W">Marathahalli (West)</option>
+                <option value="Marath_E">Marathahalli (East)</option>
+                <option value="Elec_City">Electronic City</option>
+                <option value="Yeshwantpur">Yeshwantpur</option>
+                <option value="Majestic">Majestic</option>
+                <option value="Indiranagar">Indiranagar</option>
+                <option value="Jayanagar">Jayanagar</option>
+            </select>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div class="results-box">
+            <h3>Results</h3>
+            <p><strong>Fastest Route:</strong> <span id="result-path">---</span></p>
+            <p><strong>Time:</strong> <span id="result-time">---</span></p>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
